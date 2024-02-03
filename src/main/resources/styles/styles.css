@@ -1,0 +1,59 @@
+.boton-estilo {
+    -fx-background-color: #e8b95c;
+
+    -fx-text-fill: white;
+}
+.boton-estilo:hover{
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+.boton-estilo:pressed{
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}
+.text-field-white {
+    -fx-text-fill: white;
+    -fx-background-radius: 8px;
+    -fx-background-color: black;
+    -fx-border-radius: 8px;
+    -fx-border-width: 3px;
+}
+.boton_lados{
+    -fx-scale-y: 1;
+    -fx-scale-x: 1;
+
+}
+.boton_lados:hover{
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+.boton_lados:pressed{
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}
+
+.btn {
+    -fx-background-color: white;
+    -fx-scale-y: 1;
+    -fx-scale-x: 1;
+
+}
+.bordeBrillante {
+    -fx-border-color:  #add8e6; /* Color azul brillante */
+    -fx-border-width: 3; /* Ancho del borde */
+    -fx-border-radius: 2; /* Radio de borde para esquinas redondeadas */
+    -fx-border-style: solid; /* Estilo de borde sólido */
+}
+
+.btn:hover{
+    -fx-background-color: white;
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+
+}
+.btn:pressed {
+    -fx-background-color: white;
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}
+

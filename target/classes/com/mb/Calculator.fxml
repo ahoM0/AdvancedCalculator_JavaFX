@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="435.0" style="-fx-background-color: white;" styleClass="bordeBrillante" stylesheets="@../../styles/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mb.CalculatorController">
+   <children>
+      <GridPane fx:id="gridpane" alignment="CENTER" layoutX="63.0" layoutY="181.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="310.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="num_7_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#handle_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/7_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="symbol_clear_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#handle_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" styleClass="btn">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/C_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="symbol_Mplus_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#memory_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.halignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" styleClass="btn">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/Mmas_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="add number to memory" />
+               </tooltip></Button>
+            <Button fx:id="num_1_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#handle_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/1_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="symbol_MR_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#memory_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="4" GridPane.halignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/MR_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="memory recovery" />
+               </tooltip></Button>
+            <Button fx:id="num_4_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#handle_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/4_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="symbol_MS_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#memory_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/MS_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="memory store" />
+               </tooltip></Button>
+            <Button fx:id="num_3_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#handle_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/3_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="symbol_minus_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#operation_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" styleClass="btn">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/menos_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="num_6_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#handle_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" styleClass="btn">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/6_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="symbol_multiplication_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#operation_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" styleClass="btn">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/multiplicacion_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="num_9_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#handle_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" styleClass="btn">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/9_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="symbol_porcentaje_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#operation_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" styleClass="btn">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/porcentaje_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="symbol_remove_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#handle_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" styleClass="btn">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/borrar_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="num_00_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#handle_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/00_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="num_2_button" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#handle_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/2_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="num_0_button" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#handle_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/0_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="num_5_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#handle_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/5_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="num_8_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#handle_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/8_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="symbol_plus_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#operation_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/mas_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="symbols_division_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#operation_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/division_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="symbols_equals_button" alignment="CENTER" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="39.0" minWidth="60.0" mnemonicParsing="false" onAction="#calculation_OnAction" prefHeight="62.0" prefWidth="141.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="110.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/igual_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="elevado_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#operation_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" rotate="90.0" styleClass="btn">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/borrar_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="symbol_sqr_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#operation_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" styleClass="btn">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/sqr_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="symbol_Mminus_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#memory_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" styleClass="btn">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/Mmenos_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="subtract number to memory" />
+               </tooltip></Button>
+            <Button fx:id="symbol_1andX_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#operation_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" styleClass="btn">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/1partidoX_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="symbol_MC_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#memory_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/MC_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="clear memory" />
+               </tooltip>
+            </Button>
+            <Button fx:id="symbol_decimal_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#handle_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/decimal_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="symbol_plusandminus_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#operation_OnAction" prefHeight="60.0" prefWidth="60.0" styleClass="btn" stylesheets="@../../styles/styles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../vr_MB/calculator_icons/masYmenos_result_result.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </GridPane>
+      <TextField fx:id="display" alignment="BOTTOM_RIGHT" editable="false" layoutX="51.0" layoutY="91.0" prefHeight="69.0" prefWidth="333.0" stylesheets="@../../styles/styles.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-field-white" />
+            <String fx:value="bordeBrillante" />
+         </styleClass></TextField>
+      <Button fx:id="boton_volver" layoutX="14.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="25.0" minWidth="50.0" mnemonicParsing="false" onAction="#volver_bottonOnAction" prefHeight="25.0" prefWidth="50.0" styleClass="btn" stylesheets="@../../styles/styles.css">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="40.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../vr_MB/calculator_icons/go-back-arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text layoutX="159.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculator - MB">
+         <font>
+            <Font name="Calibri Bold Italic" size="20.0" />
+         </font></Text>
+      <TextField fx:id="memory_field" alignment="CENTER_RIGHT" editable="false" layoutX="47.0" layoutY="565.0" prefHeight="41.0" prefWidth="353.0" promptText="0" style="-fx-background-color: white; -fx-background-radius: 20px; -fx-border-color: #add8e6; -fx-border-radius: 20px; -fx-border-width: 2px;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="ON_OFF_button" layoutX="350.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="40.0" minWidth="60.0" mnemonicParsing="false" onAction="#start_end_OnAction" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: white;" styleClass="btn" stylesheets="@../../styles/styles.css">
+         <graphic>
+            <ImageView fx:id="imagen_on_off" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" styleClass="btn">
+               <image>
+                  <Image url="@../../vr_MB/calculator_icons/off-button.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="FACTORIAL_button" layoutX="14.0" layoutY="348.0" mnemonicParsing="false" onAction="#operation_OnAction" prefHeight="36.0" prefWidth="40.0" style="-fx-background-color: black; -fx-border-color: #add8e6; -fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-radius: 20px;" styleClass="boton_lados" stylesheets="@../../styles/styles.css" text="!" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="Primo_button" layoutX="380.0" layoutY="348.0" mnemonicParsing="false" onAction="#operation_OnAction" prefHeight="36.0" prefWidth="40.0" style="-fx-background-color: black; -fx-border-color: #add8e6; -fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-radius: 20px;" styleClass="boton_lados" stylesheets="@../../styles/styles.css" text="Pr" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="campo_calculo" alignment="TOP_RIGHT" layoutX="68.0" layoutY="101.0" prefHeight="25.0" prefWidth="310.0" styleClass="text-field-white" stylesheets="@../../styles/styles.css" text="0+0+0" />
+   </children>
+</Pane>
